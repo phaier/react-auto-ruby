@@ -19,3 +19,8 @@ dist/**/*.test.js
 dist/**/*.test.js.map
 dist/**/*.test.d.ts
 dist/**/*.test.d.ts.map
+
+dist/example/**/*.js
+dist/example/**/*.js.map
+dist/example/**/*.d.ts
+dist/example/**/*.d.ts.map
