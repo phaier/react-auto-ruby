@@ -1,3 +1,3 @@
-# react-auto-ruby
+# @phaier/react-auto-ruby
 
-AutoRuby for React
+ルビの自動入力をするための React ユーティリティ

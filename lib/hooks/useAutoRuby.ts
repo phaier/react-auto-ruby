@@ -6,11 +6,11 @@ export function useAutoRuby(): [string, (e: KeyboardEvent<HTMLInputElement>) => 
   const [ruby, setRuby] = useState<string>('');
   const autoRuby = useRef<AutoRuby>(new AutoRuby());
 
-  const setEvent = (e: KeyboardEvent<HTMLInputElement>) => {
+  const onKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
     autoRuby.current.keypress(e, e.currentTarget.value);
 
     setRuby(autoRuby.current.getRuby());
   };
 
-  return [ruby, setEvent];
+  return [ruby, onKeyDown];
 }

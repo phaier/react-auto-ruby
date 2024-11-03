@@ -1,4 +1,4 @@
-import { isAlphabet, isNumber } from './key';
+import { HANKAKU, isAlphabet, isNumber } from './key';
 
 const alphabets: ReadonlyArray<string> = [
   ...['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u'],
@@ -16,6 +16,7 @@ test.each<[boolean, ReadonlyArray<string>]>([
   [true, alphabets],
   [true, Alphabets],
   [false, numbers],
+  [false, [HANKAKU]],
 ])('isAlphabet', (expected, inputs) => {
   inputs.forEach((input) => {
     expect(isAlphabet(input)).toBe(expected);
@@ -26,6 +27,7 @@ test.each<[boolean, ReadonlyArray<string>]>([
   [false, alphabets],
   [false, Alphabets],
   [true, numbers],
+  [false, [HANKAKU]],
 ])('isNumber', (expected, inputs) => {
   inputs.forEach((input) => {
     expect(isNumber(input)).toBe(expected);

@@ -25,7 +25,7 @@ export class AutoRuby {
     this.ruby = '';
   }
 
-  public keypress(e: KeyboardEventLike, input: string) {
+  public KeyDown(e: KeyboardEventLike, input: string) {
     if (!e.key) {
       return;
     }
