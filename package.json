@@ -1,6 +1,6 @@
 {
   "name": "@phaier/react-auto-ruby",
-  "version": "0.0.1-alpha.0",
+  "version": "0.1.0",
   "description": "AutoRuby for React",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
