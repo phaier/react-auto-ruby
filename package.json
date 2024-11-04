@@ -1,0 +1,52 @@
+{
+  "name": "@phaier/react-auto-ruby",
+  "version": "0.1.0",
+  "description": "AutoRuby for React",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "keywords": [
+    "japanese"
+  ],
+  "scripts": {
+    "build": "tsc --build",
+    "build-example": "webpack --mode development",
+    "clean": "tsc --build --clean",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "prepublish": "tsc --build --clean && tsc --build",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phaier/react-auto-ruby.git"
+  },
+  "author": "inabe49",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phaier/react-auto-ruby/issues"
+  },
+  "homepage": "https://github.com/phaier/react-auto-ruby#readme",
+  "dependencies": {
+    "@phaier/japanese": "^0.1.1"
+  },
+  "peerDependencies": {
+    "@types/react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@phaier/eslint-config-typescript": "^0.0.4",
+    "@types/jest": "^29.5.12",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "jest": "^29.7.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "ts-jest": "^29.2.3",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.3",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "volta": {
+    "node": "18.20.4"
+  }
+}
