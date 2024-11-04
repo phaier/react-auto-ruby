@@ -3,6 +3,7 @@
 .prettierrc.json
 Jakefile
 jest.config.js
+webpack.config.js
 
 tsconfig.json
 tsconfig.tsbuildinfo
@@ -12,6 +13,8 @@ tsconfig.tsbuildinfo
 .github/
 .vscode/
 lib/
+
+docs/
 
 dist/**/*.test.ts
 dist/**/*.test.tsx
